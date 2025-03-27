@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoSample.Test", "test\Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoSample.Infrastructure", "src\MongoSample.Infrastructure\MongoSample.Infrastructure.csproj", "{18CB7B53-F4E2-44E3-8A6C-B00F3E2C15B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoSample.Domain", "src\MongoSample.Domain\MongoSample.Domain.csproj", "{FEED528E-205C-4BC7-884E-E2EE4B277159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoSample.Application", "src\MongoSample.Application\MongoSample.Application.csproj", "{5DAE1AE5-BE30-4BEE-85C6-DDED68EDF4C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,8 @@ Global
 		{7062FF68-E506-4843-A2E2-DE3298C3B097} = {71D32FF1-4681-498C-8038-EF8ECF1295E0}
 		{BAA0D2CD-7AD5-41EE-8F1D-4099B6E4D58D} = {268C93E9-7CB6-450D-BC09-D293FA600CB2}
 		{18CB7B53-F4E2-44E3-8A6C-B00F3E2C15B4} = {71D32FF1-4681-498C-8038-EF8ECF1295E0}
+		{FEED528E-205C-4BC7-884E-E2EE4B277159} = {71D32FF1-4681-498C-8038-EF8ECF1295E0}
+		{5DAE1AE5-BE30-4BEE-85C6-DDED68EDF4C3} = {71D32FF1-4681-498C-8038-EF8ECF1295E0}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7062FF68-E506-4843-A2E2-DE3298C3B097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,5 +44,13 @@ Global
 		{18CB7B53-F4E2-44E3-8A6C-B00F3E2C15B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18CB7B53-F4E2-44E3-8A6C-B00F3E2C15B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18CB7B53-F4E2-44E3-8A6C-B00F3E2C15B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEED528E-205C-4BC7-884E-E2EE4B277159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEED528E-205C-4BC7-884E-E2EE4B277159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEED528E-205C-4BC7-884E-E2EE4B277159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEED528E-205C-4BC7-884E-E2EE4B277159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DAE1AE5-BE30-4BEE-85C6-DDED68EDF4C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DAE1AE5-BE30-4BEE-85C6-DDED68EDF4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DAE1AE5-BE30-4BEE-85C6-DDED68EDF4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DAE1AE5-BE30-4BEE-85C6-DDED68EDF4C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
