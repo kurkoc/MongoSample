@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using MongoSample.Infrastructure.Persistence;
 
