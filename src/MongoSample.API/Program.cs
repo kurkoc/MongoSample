@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using MongoSample.Application.DTOs;
 using MongoSample.Application.Services;
 using MongoSample.Application.Services.Abstractions;
 using MongoSample.Infrastructure.Persistence;
@@ -16,6 +17,14 @@ var app = builder.Build();
 app.MapGet("/", () => "it works!");
 
 app.MapGet("books", async ([FromServices]IBookService bookService) => Results.Ok(await bookService.GetBooks()));
+
+app.MapPost("books", async ([FromBody] BookSaveDto bookSaveDto,[FromServices] IBookService bookService) =>
+{
+    await bookService.InsertBook(bookSaveDto);
+    return Results.Ok();
+});
+
+app.MapGet("categories", async ([FromServices]ICategoryService categoryService) => Results.Ok(await categoryService.GetCategories()));
 
 app.MapGet("build", async ([FromServices] IMongoDatabase database) =>
 {

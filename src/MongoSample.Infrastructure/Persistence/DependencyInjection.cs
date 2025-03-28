@@ -18,6 +18,9 @@ public static class DependencyInjection
         var mongoClient = new MongoClient(connectionString: settings.ConnectionString);
         var mongoDatabase = mongoClient.GetDatabase(settings.DatabaseName);
         services.AddSingleton(mongoDatabase);
+
+        services.AddSingleton<MongoContext>();
+
         return services;
     }
 }

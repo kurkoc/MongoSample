@@ -14,6 +14,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\MongoSample.Domain\MongoSample.Domain.csproj" />
+      <ProjectReference Include="..\MongoSample.Infrastructure\MongoSample.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
